@@ -16,3 +16,5 @@ if prima:
     print(n, "is a prime number.")
 else:
     print(n, "is not a prime number.")
+
+print("Thank you for using the prime number checker!")
