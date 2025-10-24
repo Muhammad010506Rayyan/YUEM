@@ -40,20 +40,31 @@ int age=sc.nextInt();
 System.out.println("lets doing a loop, from 1 to 5");
 
     for(int i=1;i<=5;i++){
-    System.out.println(i++);
+    System.out.println(i);}
 //multiple loop
-System.out.println("multiple loop, input your number: ");
-int num=sc.nextInt();
+/* Create int variables named multiple, sum, and counter. Initialize variable sum and
+counter with 0.  */
+int multiple;
 int sum=0;
 int counter=0;
-    for(i=1;i<=10;i++){
-        if( i % num ==0){
-            sum=sum+1;
-            counter++;
-        }
-    } 
-    System.out.println(sum +"and "+ counter);
 
+System.out.println("input the multiple: ");
+multiple = sc.nextInt();
+
+/*  make the loop FOR */
+for (int i = 1; i <= 50; i++) {
+    if(i % multiple ==0){
+        sum = sum + i;
+        counter++;
+    }
+    
 }
+/*  make the output */
+System.out.printf("there are %d that are multiple of %d in range of 1 to 50\n", counter, multiple);
+System.out.printf("the sum of all multiple of %d in range 1 to 50 is %d\n",multiple, sum);
+
+
+
+
 }
 }
