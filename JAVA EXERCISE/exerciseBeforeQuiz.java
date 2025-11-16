@@ -10,18 +10,18 @@ public class exerciseBeforeQuiz{
     int total=0;
     //make the loop
     int day=1;
-    do{
+    while(day<=7){
     System.out.println("how long you study in day "+(day));
     hour=sc.nextInt();
     System.out.println(" ");
       if(hour>=10){
-        do { 
+        while (hour>=10){ 
         System.out.println("enter again the value, not equals or more to 10");
         hour=sc.nextInt();    
-        } while (hour>=10);}
+        }}
     total += hour;
     day++;      
-} while(day<=7);
+}
     System.out.println("total= "+total);
     }
 }
