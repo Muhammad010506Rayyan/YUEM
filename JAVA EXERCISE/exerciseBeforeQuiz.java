@@ -10,16 +10,17 @@ public class exerciseBeforeQuiz{
     System.out.print("input the maximum ");
     int max=sc.nextInt();
     System.out.print("");
-//make the conditional using loop while
+//make the conditional using loop do-while
 int i=min;
-while(i<max){
+do { 
     if(i%2==0){
-        System.out.println((i)+ " is even");
+        System.out.println((i)+" even");
     }else{
-        System.out.println((i)+" is odd");
+        System.out.println((i)+" odd");
     }
     i++;
-}
+} while (i<max);
+
 
     }
 }
